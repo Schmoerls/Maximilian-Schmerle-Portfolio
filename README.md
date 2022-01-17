@@ -1,6 +1,6 @@
 # Maximilian-Schmerle-Portfolio
 
-## JavaAndroidApp **Food Converter**
+## JavaAndroidApp *Food Converter*
 * Trailer und BeispielGifs befinden sich im jeweiligen Ordner
 
 ## PythonDrawingApp
@@ -12,7 +12,7 @@
 
 ![Vektor](./docs/VektorScreen.png)
 
-## WebApp **ChristmasCardMaker**
+## WebApp *ChristmasCardMaker*
 * Mit dieser BrowserAnwendung werden Bilder gezeichnet
 * Diese können als Frames gespeichert werden und eine Laufzeit angegeben werden
 * Im letzten Schritt können die Bilder dann zu einer Animation verknüpft werden
