@@ -9,3 +9,4 @@ Trailer und BeispielGifs befinden sich im jeweiligen Ordner
 * Das komplette Canvas kann verschoben werden und die Kontrollpunkte ausgeblendet werden
 * Eine Farbauswahl und die Veränderung der Kontrollpunkte ist auch möglich
 * Ein Trailer liegt mit im Ordner vor
+![Vektor](./docs/0SC/VektorScreen.png)
