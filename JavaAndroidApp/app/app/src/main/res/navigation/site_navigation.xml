@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/site_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.foodconverter.Fragments.HomeFragment"
+        android:label="@string/label_home"
+        tools:layout="@layout/home_screen">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_construct"
+        android:name="com.example.foodconverter.Fragments.ConstructFragment"
+        android:label="@string/label_construct"
+        tools:layout="@layout/meal_construction_overview">
+        <argument
+            android:name="@string/construct_mode"
+            android:defaultValue="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.foodconverter.Fragments.SearchFragment"
+        android:label="@string/label_search"
+        tools:layout="@layout/meal_finding_category">
+        <argument
+            android:name="@string/construct_mode"
+            android:defaultValue="false"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search_results"
+        android:name="com.example.foodconverter.Fragments.SearchResultsFragment"
+        android:label="@string/search_result"
+        tools:layout="@layout/meal_result_activity">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_selected_meal"
+        android:name="com.example.foodconverter.Fragments.SelectedMealFragment"
+        android:label="@string/result_meal"
+        tools:layout="@layout/meal_result_single_meal">
+    </fragment>
+
+
+</navigation>

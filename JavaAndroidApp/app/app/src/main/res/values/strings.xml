@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Food Converter</string>
+    <string name="start_screen_header">Food Converter</string>
+    <string name="start_screen_lastMeals">Last used Meals:</string>
+    <string name="start_screen_bspMeals">Example Meals:</string>
+    <string name="start_screen_button1">Meal Finder</string>
+    <string name="start_screen_button2">Meal Construction</string>
+    <string name="meal_finding_header1">Filter:</string>
+    <string name="vegan_switch">Vegan</string>
+    <string name="vegetarian_switch">Vegetarian</string>
+    <string name="diary_free_switch">DiaryFree</string>
+    <string name="meal_finding_header2">Ingredients</string>
+    <string name="meal_finding_header3">Selected Ingredients</string>
+    <string name="convert_button">Convert</string>
+    <string name="meal_construction_overview_header">Constructed Meals</string>
+    <string name="meal_construction_overview_button">Construct Meal</string>
+    <string name="label_home">Home</string>
+    <string name="label_search">Search</string>
+    <string name="label_construct">Construct</string>
+    <string name="construct_mode">constructMode</string>
+    <string name="search_result">Search Results</string>
+    <string name="just_own_meals_switch">JustShowOwnMeals</string>
+    <string name="result_meal">resultMeal</string>
+    <string name="any_all_switch">Any</string>
+    <string name="add_new_ingredient">Add</string>
+    <string name="liked_meals_header">  Liked Meals:</string>
+    <string name="go_to_marked_meal_button">Go to marked meal</string>
+</resources>
