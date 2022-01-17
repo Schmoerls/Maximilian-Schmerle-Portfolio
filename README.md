@@ -9,6 +9,7 @@
 * Das komplette Canvas kann verschoben werden und die Kontrollpunkte ausgeblendet werden
 * Eine Farbauswahl und die Veränderung der Kontrollpunkte ist auch möglich
 * Ein Trailer liegt mit im Ordner vor
+
 ![Vektor](./docs/VektorScreen.png)
 
 ## WebApp **ChristmasCardMaker**
@@ -17,4 +18,5 @@
 * Im letzten Schritt können die Bilder dann zu einer Animation verknüpft werden
 * Funktionen wie das Löschen des komplettem Canvas, sowie Undo der letzten Zeichenaktion und verschiedene Stiftdicken sind auch vorhanden
 * Außerdem gibt es eine Farbauswahl und einen Radierer
+
 ![Vektor](./docs/WebAppScreen.png)
