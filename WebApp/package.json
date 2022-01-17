@@ -1,0 +1,17 @@
+{
+  "name": "a-christmas-card-generator",
+  "version": "0.0.1",
+  "description": "A JavaScript-based generator for GIF-Christmas-Cards",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "open": "^8.4.0"
+  }
+}

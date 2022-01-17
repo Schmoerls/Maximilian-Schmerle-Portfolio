@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'card-generator-icons';
+  src: url('../font/card-generator-icons.eot?89423467');
+  src: url('../font/card-generator-icons.eot?89423467#iefix') format('embedded-opentype'),
+       url('../font/card-generator-icons.woff2?89423467') format('woff2'),
+       url('../font/card-generator-icons.woff?89423467') format('woff'),
+       url('../font/card-generator-icons.ttf?89423467') format('truetype'),
+       url('../font/card-generator-icons.svg?89423467#card-generator-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'card-generator-icons';
+    src: url('../font/card-generator-icons.svg?89423467#card-generator-icons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "card-generator-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-clock:before { content: '\e800'; } /* '' */
+.icon-brush:before { content: '\e801'; } /* '' */
+.icon-undo:before { content: '\e802'; } /* '' */
+.icon-save:before { content: '\e803'; } /* '' */
+.icon-picture:before { content: '\e804'; } /* '' */
+.icon-color:before { content: '\e805'; } /* '' */
+.icon-video:before { content: '\e806'; } /* '' */
+.icon-trash:before { content: '\e807'; } /* '' */
+.icon-visible:before { content: '\e808'; } /* '' */
+.icon-copy:before { content: '\e809'; } /* '' */
+.icon-pencil:before { content: '\e80a'; } /* '' */
+.icon-three:before { content: '\e80b'; } /* '' */
+.icon-two:before { content: '\e80c'; } /* '' */
+.icon-one:before { content: '\e80d'; } /* '' */
+.icon-sound:before { content: '\e80e'; } /* '' */
+.icon-mute:before { content: '\e80f'; } /* '' */
+.icon-redo:before { content: '\e810'; } /* '' */
+.icon-droplet:before { content: '\e812'; } /* '' */

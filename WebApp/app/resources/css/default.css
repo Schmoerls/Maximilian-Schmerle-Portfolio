@@ -1,0 +1,276 @@
+/* Import fonts from Google*/
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Space+Grotesk:wght@400;500&display=swap");
+/* Load icon font for UI elements */
+@import url("/vendors/fontello/css/card-generator-icons.css");
+
+
+/* Color palette  */
+:root {
+    /* Colors for UI elements  */
+    --dark-pastel-red: rgb(186, 59, 38);
+    --earth-yellow: rgb(216, 176, 92);
+    --dark-olive-green: rgb(91, 98, 49);
+    --rifle-green: rgb(61, 81, 50);
+    --apricot: rgb(245, 210, 177);
+    --milk-chocolate: rgb(133, 81, 44);
+    /* Colors for drawing on canvas  */
+    --canvas-green: rgb(9, 85, 34);
+    --canvas-yellow: rgb(245, 162, 42);
+    --canvas-red: rgb(219, 40, 42);
+    --canvas-cream: rgb(255, 220, 206);
+    --canvas-blue: rgb(132, 204, 186);
+    --canvas-gold: rgb(255, 198, 77);
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--apricot);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.ui {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+}
+
+h1 {
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3em;
+    font-family: "Mountains of Christmas", cursive;
+    color: var(--dark-pastel-red);
+}
+
+h1+div {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: var(--rifle-green);
+}
+
+.editor {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.toolbar,
+.actions,
+.frames {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.toolbar li,
+.actions li {
+    margin: 0.5em;
+    width: 2em;
+    height: 2em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 50%;
+    line-height: 2em;
+    text-align: center;
+    color: var(--apricot);
+}
+
+.toolbar li:hover,
+.actions li:hover {
+    cursor: pointer;
+}
+
+
+.toolbar li {
+    border-color: var(--dark-pastel-red);
+    background-color: var(--dark-pastel-red);
+}
+
+.toolbar li:first-child {
+    margin-bottom: 2em;
+}
+
+.toolbar li.green-selector {
+    border-color: var(--canvas-green);
+}
+
+.toolbar li.yellow-selector {
+    border-color: var(--canvas-yellow);
+}
+
+.toolbar li.red-selector {
+    border-color: var(--canvas-red);
+}
+
+.toolbar li.cream-selector {
+    border-color: var(--canvas-cream);
+}
+
+.toolbar li.blue-selector {
+    border-color: var(--canvas-blue);
+}
+
+.toolbar li.gold-selector {
+    border-color: var(--canvas-gold);
+}
+
+.toolbar li.active {
+    border-color: var(--rifle-green);
+}
+
+.actions {
+    align-self: flex-end;
+}
+
+.actions li {
+    border-color: var(--rifle-green);
+    background-color: var(--rifle-green);
+}
+
+.actions li:last-child {
+    margin-top: 2em;
+}
+
+.editor canvas {
+    height: 50vh;
+    width: 85vh;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 0.1em;
+    border-color: var(--dark-pastel-red);
+    background-color: #fff;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 24vw;
+    overflow-y: scroll;
+    background-color: var(--dark-pastel-red);
+}
+
+.frames {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.frames li {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 18vw;
+    margin: 0 auto;
+}
+
+.frames li .frame-id {
+    text-align: center;
+    color: var(--apricot);
+    font-size: 0.75em;
+}
+
+.frames li img {
+    width: 18vw;
+    height: 11vw;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px 4px 0 0 ;
+    border-color: var(--apricot);
+}
+
+.frames li .time-selector {
+    display: flex;
+    width: 18vw;
+    padding: 0.5vh 0;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0 0 4px 4px;
+    border-color: var(--apricot);
+    background-color: var(--apricot);
+}
+
+.frames li .time {
+    padding: 3px;
+    border-style: none;
+    border-radius: 4px;
+    background-color: var(--apricot);
+    text-align: center;
+    font-size: 0.75em;
+    color: var(--dark-pastel-red);
+}
+
+.frames li .time:hover {
+    cursor: pointer;
+}
+
+.frames li .time.selected {
+    background-color: var(--dark-olive-green);
+    color: var(--apricot);
+}
+
+.frames li .trash {
+    align-self: flex-end;
+    position: relative;
+    top: 2.25em;
+    right: 1em;
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    background-color: var(--dark-pastel-red);
+    line-height: 1.75em;
+    text-align: center;
+    color: var(--apricot);
+}
+
+.frames li .trash:hover {
+    cursor: pointer;
+    background-color: var(--rifle-green);
+}
+
+.preview {
+    position: fixed;
+    bottom: 2vw;
+    left: 2vw;
+}
+
+.preview img {
+    width: 16vw;
+    height: 9vw;
+    border-radius: 4px;
+    background-color: var(--dark-pastel-red);
+}
+
+.preview .download {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    height: 9vw;
+    background-color: var(--apricot);
+    opacity: 0;
+    line-height: 9vw;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.preview .download:hover {
+    opacity: 0.95;
+    cursor: pointer;
+    color: var(--dark-pastel-red);
+}
